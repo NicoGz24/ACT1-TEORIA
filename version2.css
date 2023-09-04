@@ -1,0 +1,191 @@
+/* Estilo global */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Agregar posición relativa al cuerpo */
+}
+
+/* Barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0; /* Mantener la barra de navegación en la parte superior */
+    z-index: 2; /* Para que esté por encima de otros elementos */
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    /* Colapsar los menús de navegación en un solo botón */
+    input[type="radio"] {
+        display: none;
+    }
+
+    label[for^="menu-"] {
+        display: block;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    input[type="radio"]:checked + label + .tab-content {
+        display: block;
+    }
+}
+/* Estilo para el formulario y contenido */
+.tab-content {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 60px; /* Ajustar la distancia desde la barra de navegación */
+    background-color: #80cbc4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1; /* Asegurar que esté por encima de la barra de navegación */
+    color: #000; /* Cambiar el color de la letra a negro */
+}
+
+input[type="radio"]:checked + label + .tab-content {
+    display: block;
+}
+
+/* Estilo para el formulario de contacto */
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Estilo para los cursos */
+.curso-container {
+    background-color:#bdbdbd;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.curso-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.curso-container p{
+    text-align: center;
+}
+.curso-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.curso-container li {
+    margin: 10px 0;
+}
+
+.curso-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.curso-container a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+.cursos{
+    background-color:#78909c ;
+    border: 1px solid #141414;
+    margin: 3px;
+   
+}
+
+#ingles-tab:checked ~ #ingles-content,
+#frances-tab:checked ~ #frances-content{
+    display: block;
+}
+
+.button-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido oculto */
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Mostrar el contenido cuando el botón está marcado */
+input[type="checkbox"]:checked + .hidden-content {
+    display: block;
+}
+
+ /* Estilo para hacer imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}

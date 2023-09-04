@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cursos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <input type="radio" name="menu" id="contacto-tab">
+                    <label for="contacto-tab">Información de contacto</label>
+                    <div class="tab-content">
+                        <form id="contact-form" class="tab-content-item">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <label for="consulta">Consulta:</label>
+                            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="menu" id="quien-mantiene-tab">
+                    <label for="quien-mantiene-tab">Información de quien mantiene el sitio</label>
+                    <div class="tab-content">
+                        <p>Nombre: Tecnobot</p>
+                        <p>Dirección: Alem 456</p>
+                        <p>Email: info@Tecnobot</p>
+                        <p>Teléfono: 0256-754623</p>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <input type="radio" name="menu" id="catalogo-tab">
+                    <label for="catalogo-tab">Catálogo</label>
+                    <div class="tab-content">
+                        <label for="ingles-tab">Inglés</label>
+                        <input type="radio" name="curso" id="ingles-tab">
+                        <div class="curso-container" id="ingles-content">
+                            <h2 >Cursos de Inglés</h2>
+                            <ul>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Inglés Básico</p>
+                                        <a href="programas/ingles_basico.pdf" download style="color: blue;">Descargar Programa</a>
+                                    </li>
+                                </div>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Inglés Intermedio</p>
+                                        <a href="programas/ingles_intermedio.pdf" download style="color: blue;">Descargar Programa</a>
+                                    </li>
+                                </div>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Inglés Avanzado</p>
+                                        <a href="programas/ingles_avanzado.pdf" download style="color: blue;">Descargar Programa</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <label for="frances-tab">Francés</label>
+                        <input type="radio" name="curso" id="frances-tab">
+                        <div class="curso-container" id="frances-content">
+                            <h2>Cursos de Francés</h2>
+                            <ul>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Francés Básico</p>
+                                        <a href="programas/frances_basico.pdf" download style="color: blue;">Descargar Programa</a>
+                                    </li>
+                                </div>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Francés Intermedio</p>
+                                        <a href="programas/frances_intermedio.pdf" download style="color: blue;">Descargar Programa</a>
+                                    </li>
+                                </div>
+                                <div class="cursos">
+                                    <li>
+                                        <p>Francés Avanzado</p>
+                                        <a href="programas/frances_avanzado.pdf" download style="color: blue;">Descargar Programa</a>
+                                </li></div>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Botón -->
+    <h3>Actividad 1 - Proyecto de Software</h3>
+    <label for="show-content" class="button-label">Mostrar Consiga</label>
+    <input type="checkbox" id="show-content" style="display: none;">
+
+    <!-- Contenido oculto -->
+    <div class="hidden-content">
+        <a href="https://www.ejemplo.com" style="font-size: large; position: absolute; margin-left: 25px;">Ver video</a>
+        <img src="Consigna-ACT1.png" alt="Consigna ACT1">  
+    </div>
+    <footer>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
